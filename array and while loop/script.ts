@@ -1,25 +1,102 @@
-// let sum:number = 0;
-let list:number[] = []
-for (let index = 1; index < 100; index++) {
-    if(index % 2 == 0){
-        // sum = sum + index
-        list.push(index)
-    }   
+
+// FOR DO WHILE LOOPS
+
+
+
+// // let sum:number = 0;
+// let list:number[] = []
+// for (let index = 1; index < 100; index++) {
+//     if(index % 2 == 0){
+//         // sum = sum + index
+//         list.push(index)
+//     }   
+// }
+// console.log(`list`, list);
+
+//task 1
+// let arr:number[] = []
+// for (let index = 1; index <= 20; index++) {
+    
+//     console.log(arr.push(index));
+    
+// }
+// task 2
+// let i:number = 20
+// while(i>0){
+//     console.log(i);
+//     i--
+    
+// }
+
+// task 3
+// let num:number = 0;
+// do{
+//     num++
+//     console.log(num);
+    
+// }while(num < 10 )
+
+
+// task4
+// for(let i = 1; i < 50;i++){
+//     if(i % 2 == 0){
+//         console.log(i);
+        
+//     }
+// }
+
+// task 5
+// for(let i = 1; i < 50;i++){
+//     if(i % 2 != 0){
+//         console.log(i);
+        
+//     }
+// }
+
+
+// task 6
+// for(let i = 1; i <= 10; i++){
+//     let result:number = 7 * i;
+//     console.log(`7 x ${i}`, result);
+    
+// }
+
+// task 7
+// let i:number = 1;
+// while(i<10){
+//     let result:number = 12 * i
+//     console.log(`12 x ${i}=`,result);
+//     i++
+    
+// }
+
+// task 8
+// let i:number = 1;
+// do{
+//     let result:number = 15 * i;
+//     console.log(`15 x ${i}=`,result);
+//     i++
+// }while(i<=10)
+
+//task 9
+
+// let sum:number = 0
+// for (let index = 1; index <= 100; index++) {
+
+//     sum = sum + index
+//     console.log(sum);
+// }
+
+// task 10
+
+let i:number = 1;
+while(i <= 100){
+    if(i % 2 == 0){
+        console.log(`Even number is =`,i);
+        
+    }
+    i++
 }
-console.log(`list`, list);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

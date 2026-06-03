@@ -1,7 +1,64 @@
+function highest(arr) {
+    if (arr.length === 0) {
+        return undefined;
+    }
+    var max = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+var arr = [324, 243, 4336, 364534, 2341];
+var result = highest(arr);
+console.log(result);
+// function highest(arr:number[]) {
+//     if(arr.length === 0){return undefined};
+//     let max:number = arr[0];
+//     let i:number = 0;
+//     while(i < arr.length){
+//         if(arr[i] > max){
+//             max = arr[i]
+//         }
+//         i++
+//     }
+//     return max
+// }
+// let arr:number[] = [24,235,54,45745,54425,341]
+// let result = highest(arr)
+// console.log(result);
+// function highest(arr:number[]) {
+// if(arr.length === 0){return undefined}
+// let max:number = arr[0];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i]
+//         }
+//     }
+//     return max
+// }
+// let arr:number[] = [2,5,6,64,68598,4398987,90,80,60]
+// let result = highest(arr)
+// console.log(result);
+// // finding the highest number in array
+// function highest(arr:number[]) {
+//     if(arr.length === 0){return undefined}
+//     let max:number = arr[0];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i]
+//         }
+//     }
+// return max
+// }
+// let arr:number[] = [23,2,555,90292];
+// let result = highest(arr);
+// console.log(result);
+// // if(age >= 18){
 // mix tasks
 // task 1 
 // let age:number = 17;
-// if(age >= 18){
 //     console.log(`Adult`);
 // }else{
 //     console.log(`minor`);
@@ -60,21 +117,19 @@
 // console.log(sum);
 // task 10 
 // finding the biggest number in this array 
-function highest(arr) {
-    if (arr.length === 0) {
-        return undefined;
-    }
-    var max = arr[0];
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
-    }
-    return max;
-}
-var arr = [10, 20, 30, 40, 50];
-var result = highest(arr);
-console.log(result);
+// function highest(arr:number[]){
+//     if(arr.length === 0) {return undefined}
+//     let max:number = arr[0]
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i]
+//         }
+//     }
+//     return max
+// }
+// let arr = [10, 20, 30, 40, 50];
+// const result = highest(arr)
+// console.log(result);
 // Mix tasks
 // // task 1
 // function Checker(i:number){

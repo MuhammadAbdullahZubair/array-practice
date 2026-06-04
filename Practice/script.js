@@ -1,18 +1,164 @@
-function highest(arr) {
-    if (arr.length === 0) {
-        return undefined;
-    }
-    var max = 0;
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
-        }
-    }
-    return max;
+// Objects 
+// let object = {
+//     name: `Abdullah`,
+//     age: 17,
+//     city: `Jhang city`
+// }
+// console.log(object);
+// object 2
+// const car = {
+//     brand:`Honda`,
+//     model: `Civic Type-R`,
+//     year: 2026
+// }
+// console.log(car.model);
+// object 3
+// const student = {
+//     Name:`Abdullah - falak`,
+//     age:`27`,
+//     Marks: 50
+// }
+// student.Marks +=  10
+// console.log(student.Marks);
+// task 4 
+// const mobile = {
+//     brand: `Apple`,
+//     price: 70000
+// }
+// if(mobile.price > 50000){
+//     console.log(`Expensive`);
+// }else{
+//     console.log(`Affordable`);   
+// }
+// object 5
+// let book:{Title:string , Aurthor:string, pages:number} = {
+//     Title: `The Six Pillar's Esteem`,
+//     Aurthor: `Nathaniel Branden`,
+//     pages: 348
+// }
+// console.log(`Book Title:`,book.Title);
+// console.log(`Book Aurthor:`, book.Aurthor);
+// console.log(`Total Pages:`, book.pages);
+// objects with loop
+// task 6 
+// let student = [{
+//     Name: `abdullah`,
+//     Class: 8,
+//     RollNo: 512830
+// },{
+//     Name: `abdullah Falak`,
+//     Class: 8,
+//     RollNo: 5128
+// },{
+//     Name: `Abdul-Rehman`,
+//     Class: 8,
+//     RollNo: 3254
+// },{
+//     Name: `Husnain`,
+//     Class: 8,
+//     RollNo: 453
+// }]
+// for(let i = 0 ; i < student.length; i++){
+//     console.log(student[i].Name);
+// }
+// task 7
+// let products:{Name:string , Price:number}[]  = [{
+//     Name: `Sting`,
+//     Price: 200
+// },{
+//     Name: `coca-cola`,
+//     Price: 210
+// },{
+//     Name: `Fanta`,
+//     Price: 250
+// },{
+//     Name: `Speaker`,
+//     Price: 1300
+// }]
+// for(let i= 0 ; i < products.length; i++){
+//     console.log(`Price is:`,products[i].Price);
+// }
+// task 8 
+// interface Employee {
+//   age: number;
+//   Name: string;
+//   Id: number;
+// }
+// const Employees:Employee[] = [{
+//     Name: `saif`,
+//     age: 20,
+//     Id:5236
+// },{
+//     Name: `saif`,
+//     age: 20,
+//     Id:457
+// },{
+//     Name: `saif`,
+//     age: 20,
+//     Id:578
+// },{
+//     Name: `saif`,
+//     age: 20,
+//     Id:514
+// }]
+// let Total:number = 0;
+// for(const Employee of Employees){
+//         Total++
+// }
+// console.log(Total);
+// task 9
+// total of student age
+// let student = [{
+//     Name: `abdullah`,
+//     age: 25,
+//     Class: 8,
+//     RollNo: 512830
+// },{
+//     Name: `abdullah Falak`,
+//     Class: 8,
+//     age: 27,
+//     RollNo: 5128
+// },{
+//     Name: `Abdul-Rehman`,
+//     Class: 8,
+//     age: 20,
+//     RollNo: 3254
+// },{
+//     Name: `Husnain`,
+//     Class: 8,
+//     age: 23,
+//     RollNo: 453
+// }]
+//     let total:number = 0
+//     for(let i = 0 ; i < student.length; i++){
+//         total += student[i].age
+//     }     
+//     console.log(`Total Age is:`, total);
+// task 10 
+var cars = [{
+        Brand: "Toyota",
+        model: "Supra",
+        year: 2000
+    }, {
+        Brand: "Mazda",
+        model: "RX-7",
+        year: 1999
+    }, {
+        Brand: "KIA",
+        model: "Suportage",
+        year: 2025
+    }, {
+        Brand: "Mitsubishi",
+        model: "Pajero-Evo",
+        year: 2000
+    }, {
+        Brand: "Mitsibishi",
+        model: "Lancer-Evo",
+        year: 2000
+    }];
+for (var i = 0; i < cars.length; i++) {
+    console.log("Car Brand Name is", cars[i].Brand);
 }
-var arr = [324, 243, 4336, 364534, 2341];
-var result = highest(arr);
-console.log(result);
 // function highest(arr:number[]) {
 //     if(arr.length === 0){return undefined};
 //     let max:number = arr[0];

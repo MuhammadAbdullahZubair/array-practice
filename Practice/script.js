@@ -1,3 +1,46 @@
+// Map() Practice
+// task 1
+// let nums: number[] = [1,2,3,4,5];
+// let newArr = nums.map((elem)=>{
+//     return elem.toLocaleUpperCase()
+// })
+// console.log(newArr);
+// task 2
+// let names: string[] = ["ali", "sara", "usman"];
+// let newArr1 = names.map((elem)=>{
+//     return elem.toLocaleUpperCase()
+// })
+// console.log(newArr1);
+// task 3 
+// let users = [
+//   { id: 1, name: "Fatima", age: 22 },
+//   { id: 2, name: "Bilal",  age: 25 },
+//   { id: 3, name: "Hina",   age: 19 },
+// ];
+// let usersNames = users.map((elem)=>{
+//     return elem.name
+// });
+// console.log(usersNames);
+// task 4
+// add tax in prices 
+// let products = [
+//   { name: "tea",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+// let productTax = products.map((elem)=>{
+//     return {
+//         Name: elem.name,
+//         Price: elem.price * 1.17
+//     }
+// })
+// console.log(productTax);
+// task 5 
+var fruits = ["mango", "banana", "apple"];
+var indexOfFruits = fruits.map(function (elem, i) {
+    return i + elem;
+});
+console.log(indexOfFruits);
 // Objects 
 // let object = {
 //     name: `Abdullah`,
@@ -135,30 +178,30 @@
 //     }     
 //     console.log(`Total Age is:`, total);
 // task 10 
-var cars = [{
-        Brand: "Toyota",
-        model: "Supra",
-        year: 2000
-    }, {
-        Brand: "Mazda",
-        model: "RX-7",
-        year: 1999
-    }, {
-        Brand: "KIA",
-        model: "Suportage",
-        year: 2025
-    }, {
-        Brand: "Mitsubishi",
-        model: "Pajero-Evo",
-        year: 2000
-    }, {
-        Brand: "Mitsibishi",
-        model: "Lancer-Evo",
-        year: 2000
-    }];
-for (var i = 0; i < cars.length; i++) {
-    console.log("Car Brand Name is", cars[i].Brand);
-}
+// let cars:{Brand:string,model:string,year:number}[] = [{
+//     Brand: `Toyota`,
+//     model: `Supra`,
+//     year:2000
+// },{
+//     Brand: `Mazda`,
+//     model: `RX-7`,
+//     year:1999
+// },{
+//     Brand: `KIA`,
+//     model: `Suportage`,
+//     year:2025
+// },{
+//     Brand: `Mitsubishi`,
+//     model: `Pajero-Evo`,
+//     year:2000
+// },{
+//     Brand: `Mitsibishi`,
+//     model: `Lancer-Evo`,
+//     year:2000
+// }]
+// for(let i = 0; i < cars.length; i++){
+//     console.log(`Car Brand Name is`, cars[i].Brand);
+// }
 // function highest(arr:number[]) {
 //     if(arr.length === 0){return undefined};
 //     let max:number = arr[0];

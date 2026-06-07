@@ -52,6 +52,371 @@
 // });
 // console.log(indexOfFruits);
 
+// Filter 
+
+// task 1 
+
+// let num = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// let nums = num.filter((elem)=>{
+//     return elem % 2 === 0
+// });
+// console.log(nums);
+
+// task 2 
+
+// let fruit = ["cat", "mango", "hi", "banana", "ok", "apple"];
+// let fruits = fruit.filter((elem)=>{
+//     return elem.length > 4
+// });
+// console.log(fruits);
+
+
+
+// task 3
+
+// let user = [
+//   { name: "Ali",   age: 15 },
+//   { name: "Sara",  age: 22 },
+//   { name: "Usman", age: 17 },
+//   { name: "Hina",  age: 25 },
+// ];
+
+// let users = user.filter((elem)=>{
+//     return elem.age > 18
+// });
+// console.log(users);
+
+// task 4 
+
+// const products = [
+//   { name: "Chai",      price: 50  },
+//   { name: "Laptop",    price: 150000 },
+//   { name: "Biscuit",   price: 30  },
+//   { name: "Phone",     price: 80000 },
+//   { name: "Samosa",    price: 40  },
+// ];
+
+// let product = products.filter((elem)=> {return elem.price > 100}).map((elem)=>{return elem.name})
+// console.log(product);
+
+// task 5 
+
+// const names: string[] = ["Ali", "Fatima", "Bilal", "Alina", "Hamza"];
+// let result = names.filter((name)=>{
+//     return name.toLowerCase().includes(`ali`)
+// })
+
+// console.log(result);
+
+// reduce 
+
+// task 1 
+
+// const nums: number[] = [10, 20, 30, 40, 50];
+
+// let result = nums.reduce((total , currentval)=>{
+//     console.log(`total: ${total} currentval: ${currentval}`);
+    
+//     return currentval + total
+// },0);
+
+// console.log(result);
+
+// task 2 
+
+// const nums: number[] = [3, 7, 2, 9, 4, 1];
+
+// let result = nums.reduce((total,currentval)=>{ return total < currentval ? currentval: total},0)
+
+// console.log(result);
+
+//  task 3
+
+
+
+
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+
+// let result = products.reduce((total , currentval)=>{
+//     return total + currentval.price
+// },0)
+// console.log(result);
+
+
+// task 5
+
+// const words: string[] = ["Mera", "naam", "Ali", "hai"];
+// let result = words.reduce((total , elem , index)=>{
+//     return index == 0 ? elem: `${total} ${elem}`
+    
+// },``)
+
+// console.log(result);
+
+
+// task 1 
+
+// const nums: number[] = [10, 20, 30, 40, 50];
+// let result = nums.reduce((sum , elem)=>{
+//     return sum + elem
+// },0)
+// console.log(result);
+
+
+// task 2 
+
+// const nums: number[] = [3, 7, 2, 9, 4, 1,124];
+// let result = nums.reduce((sum , elem)=>{
+//     return sum < elem ? elem: sum
+// },0)
+// console.log(result);
+
+// task 3 
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+// let result = products.reduce((sum,product)=>{
+//     return sum + product.price
+// },0)
+
+// console.log(result);
+
+// task 4 
+
+// const words: string[] = ["Mera", "naam", "Ali", "hai"];
+// let result = words.reduce((sum , word , index)=>{
+//     return index == 0 ? word: `${sum} ${word}`
+// }, "")
+
+// console.log(result);
+
+// Task 5 
+
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 30  },
+//   { name: "Samosa",  price: 50  },
+//   { name: "Juice",   price: 20  },
+//   { name: "Burger",  price: 200 },
+// ];
+// const totalBill: number = products
+//   .filter((product) => product.price > 40)                 // Price > 40 wale products filter kiye
+//   .map((product) => product.price * 0.9)                   // 10% discount lagaya (baki bacha 90%)
+//   .reduce((sum, discountedPrice) => sum + discountedPrice, 0); // Sab discounted prices ka total nikala
+
+// console.log(totalBill);
+
+
+
+// task 1 
+
+// const nums: number[] = [10, 20, 30, 40, 50];
+
+// let result = nums.reduce((sum , elem)=>{
+//     return sum + elem
+// }, 0)
+
+// console.log(result);
+
+// // task 2 
+// const nums: number[] = [3, 7, 2, 9, 4, 1];
+
+// let result = nums.reduce((sum,biggest)=>{
+//     return sum > biggest ? sum: biggest
+// },0)
+// console.log(result);
+
+// task 3 
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+
+// let result = products.reduce((sum , total)=>{
+//     return total.price + sum
+// },0)
+
+// console.log(result);
+
+// task 4
+
+// const words: string[] = ["Mera", "naam", "Ali", "hai"];
+
+// let result = words.reduce((sum , word, index)=>{
+//     return index == 0 ? word:`${sum} ${word}`
+// },``)
+// console.log(result);
+
+// task 5 
+
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 30  },
+//   { name: "Samosa",  price: 50  },
+//   { name: "Juice",   price: 20  },
+//   { name: "Burger",  price: 200 },
+// ];
+
+// let result = products.filter((product)=>{
+//     return product.price > 40
+// }).map((product)=>{
+    
+//     return {
+//         name: product.name,
+//         price: product.price * 0.9
+//     }
+// }).reduce((sum, product) => {
+//     return sum + product.price
+// },0)
+    
+// console.log(result);
+
+
+// again tasks 
+// task 1 
+// const nums: number[] = [10, 20, 30, 40, 50];
+// let result = nums.reduce((sum,elem)=>{
+//     return sum + elem
+// },0)
+
+// console.log(result);
+
+// task 2 
+
+// const nums: number[] = [3, 7, 2, 9, 4, 1];
+// let result = nums.reduce((sum , highest )=>{
+//     return sum > highest ? sum : highest
+// },0)
+
+// console.log(result);
+
+
+// task 3 
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+// let result = products.reduce((sum,product)=>{
+//     return product.price + sum
+// },0)
+
+// console.log(result);
+
+// task 4 
+// const words: string[] = ["Mera", "naam", "Ali", "hai"];
+// let result = words.reduce((sum, word)=>{
+//     return sum + ` ` + word
+// },``)
+
+// console.log(result);
+
+// task 5 
+
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 30  },
+//   { name: "Samosa",  price: 50  },
+//   { name: "Juice",   price: 20  },
+//   { name: "Burger",  price: 200 },
+// ];
+
+// let result = products.filter((p)=>{
+//     return p.price > 40
+// }).map((p)=>{
+//     return p.price * 0.9
+// }).reduce((sum , p)=>{
+//     return sum + p
+// })
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

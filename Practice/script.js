@@ -1,3 +1,48 @@
+// setTimeout
+// task 1 
+// setTimeout(() => {
+//     console.log(`Chai redy ha .`);
+// }, 3000);
+// task 2 
+// let count = 0;
+// let fun = setInterval(()=>{
+//     count++
+//     console.log(count);
+//     if(count === 5){
+//         clearInterval(fun)
+//     }
+// },1000)
+// task 3 
+// setTimeout(()=>{
+//     console.log(`order mila`);
+//     setTimeout(() => {
+//         console.log(`khana ban raha ha`);
+//     }, 1500);
+//     setTimeout(() => {
+//        console.log(`khana redy ha`);
+//     }, 3000);
+// },1000)
+// task 4
+// let count = 0;
+// const check = setInterval(() => {
+//     const timer = new Date().toLocaleTimeString()
+//     console.log(timer);
+//     count++
+//     if(count == 5){
+//         console.log(clearInterval(check));
+//         console.log(`clock Stopped`);
+//     }
+// }, 1000);
+// task 5 
+var count = 10;
+var timer = setInterval(function () {
+    console.log(count);
+    count--;
+    if (count < 0) {
+        clearInterval(timer);
+        console.log("Blast off");
+    }
+}, 1000);
 // Map() Practice
 // task 1
 // let nums: number[] = [1,2,3,4,5];
@@ -227,21 +272,114 @@
 // },``)
 // console.log(result);
 // task 5 
-var products = [
-    { name: "Chai", price: 100 },
-    { name: "Biscuit", price: 30 },
-    { name: "Samosa", price: 50 },
-    { name: "Juice", price: 20 },
-    { name: "Burger", price: 200 },
-];
-var result = products.filter(function (p) {
-    return p.price > 40;
-}).map(function (p) {
-    return p.price * 0.9;
-}).reduce(function (sum, p) {
-    return sum + p;
-});
-console.log(result);
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 30  },
+//   { name: "Samosa",  price: 50  },
+//   { name: "Juice",   price: 20  },
+//   { name: "Burger",  price: 200 },
+// ];
+// let result = products.filter((p)=>{
+//     return p.price > 40
+// }).map((p)=>{
+//     return p.price * 0.9
+// }).reduce((sum , p)=>{
+//     return sum + p
+// })
+// console.log(result);
+// foreach tasks 
+// task 1 
+// const names: string[] = ["Ali", "Sara", "Usman", "Hina"];
+// let result = names.forEach((elem)=>{
+//     console.log(elem);
+// })
+// task 2 
+// const names: string[] = ["Ali", "Sara", "Usman"];
+// let result= names.forEach((elem , index)=>{
+//     index++
+//     console.log(`Index is:`,index,`value is:`,elem);
+// })
+// task 3 
+// const nums: number[] = [1, 2, 3, 4, 5];
+// let result = nums.forEach((elem)=>{
+//     console.log(elem + elem);
+// })
+// task 4 
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+// let result = products.forEach((elem)=>{
+//     console.log(elem.name ,`Rs:`, elem.price);
+// })\
+// Task 5 
+// const nums = [1, 2, 3];
+// Attempt 1 — naya array chahiye
+// const doubled = nums.forEach((n)=>{
+// console.log(n * 2); // undefined kyun aa raha hai?
+// });
+// undefined es lia ara tha kiu ka in foreach double karna ka lia console.log ma print karna hota ha 
+// Attempt 2 — sirf print karna hai
+// const result = nums.forEach(n => console.log(n));
+// Yeh kaam karta hai, lekin galat method hai — kyun?
+// ab maine theak kar di ha ghalti
+// kiu kah map return karna ka lia use hota ha note for simple printing things 
+// task 1 
+// const nums: number[] = [10, 20, 30, 40, 50];
+// let result = nums.reduce((sum,total)=>{
+//     return sum + total
+// },0)
+// console.log(result);
+// task 2 
+// const nums: number[] = [3, 7, 2, 9, 4, 1];
+// let result = nums.reduce((sum , total ,index)=>{
+//     return total < sum ? sum : total
+// },0)
+// console.log(result);
+// task 3 
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 50  },
+//   { name: "Samosa",  price: 30  },
+// ];
+// let result = products.reduce((sum , total)=>{
+//     return total.price + sum
+// },0)
+// console.log(result);
+// task 4 
+// const words: string[] = ["Mera", "naam", "Ali", "hai"];
+// let result = words.reduce((sum,word)=>{
+//     return sum + ` ` + word
+// },)
+// console.log(result);
+// task 5 
+// const products = [
+//   { name: "Chai",    price: 100 },
+//   { name: "Biscuit", price: 30  },
+//   { name: "Samosa",  price: 50  },
+//   { name: "Juice",   price: 20  },
+//   { name: "Burger",  price: 200 },
+// ];
+// let total = products.filter((p)=>{
+//     return p.price > 40
+// }).map((p)=>{
+//     return p.price * 0.9
+// }).reduce((sum , p)=>{
+//     return sum + p;
+// })
+// console.log(total);
+// function even(arr:number[]){
+//     return arr
+//     .filter((even)=>{return even % 2 ===0})
+//     .map((even)=>{return even * 2})
+//     .reduce((sum,even)=>{
+//         return sum + even
+//     },0)
+// }
+// let arr:number[] = [1,2,3,4,5,6]
+// let result = even(arr)
+// console.log(result);
 // Objects 
 // let object = {
 //     name: `Abdullah`,
